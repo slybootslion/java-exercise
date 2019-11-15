@@ -1,6 +1,6 @@
 package d1;
 
-public class lilyNum {
+public class Demo02_lilyNum {
     public static void main(String[] args) {
         int c = 0;
         for (int i = 100; i <= 999; i++) {

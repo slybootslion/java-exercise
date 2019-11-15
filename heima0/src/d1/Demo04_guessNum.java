@@ -3,7 +3,7 @@ package d1;
 import java.util.Random;
 import java.util.Scanner;
 
-public class guessNum {
+public class Demo04_guessNum {
 
     public static void main(String[] args) {
 

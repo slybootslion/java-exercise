@@ -1,6 +1,6 @@
 package d1;
 
-public class zhuMuLangMaFeng {
+public class Demo03_zhuMuLangMaFeng {
     public static void main(String[] args) {
         int c = 0;
         int zf = 8844430;
