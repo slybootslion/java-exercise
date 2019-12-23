@@ -10,7 +10,7 @@ public class DateDemo {
         System.out.println(s);
 
         String s1 = "2019-12-23 17:56:55";
-        Date dd = DateUtils.stringToDate(s, "yyyy-MM-dd HH:mm:ss");
+        Date dd = DateUtils.stringToDate(s1, "yyyy-MM-dd HH:mm:ss");
         System.out.println(dd);
 
     }
