@@ -4,7 +4,7 @@ import java.io.File;
 
 public class DiGuiDemo2 {
     public static void main(String[] args) {
-        File srcFile = new File("../heima0/fileTest");
+        File srcFile = new File("fileTest");
         getAllFilePath(srcFile);
     }
 
