@@ -1,6 +1,8 @@
 package com.sketchmac.community;
 
+import com.sketchmac.community.dao.DiscussPostMapper;
 import com.sketchmac.community.dao.UserMapper;
+import com.sketchmac.community.entity.DiscussPost;
 import com.sketchmac.community.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Date;
+import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -18,6 +21,9 @@ public class MapperTest {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private DiscussPostMapper discussPostMapper;
 
     @Test
     public void testSelectUser() {
@@ -57,5 +63,16 @@ public class MapperTest {
         rows = userMapper.updatePassword(150, "testpassword");
         System.out.println(rows);
 
+    }
+
+    @Test
+    public void testSelectDiscussPost() {
+        List<DiscussPost> list = discussPostMapper.selectDiscussPosts(149, 0, 10);
+        for (DiscussPost discussPost : list) {
+            System.out.println(discussPost);
+        }
+
+        int cout = discussPostMapper.selectDiscussPostRows(149);
+        System.out.println(cout);
     }
 }
