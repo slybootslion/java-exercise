@@ -1,0 +1,10 @@
+#jdbc.driverClassName=com.mysql.jdbc.Driver
+#jdbc.url=jdbc:mysql://127.0.0.1:3306/springboot_test
+#jdbc.username=springboot
+#jdbc.password=123456
+#server.port=20001
+
+#配置文件统一加载
+spring:
+  profiles:
+    active: jdbc,server,log
